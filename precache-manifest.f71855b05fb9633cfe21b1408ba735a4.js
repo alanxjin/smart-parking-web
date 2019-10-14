@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc9ad1af00782e51fa9ab8d0b3e0bbd8",
+    "revision": "1d1fd20f0f216ce0e2d1dfbd1fd17d09",
     "url": "/smartParkingWeb/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartParkingWeb/static/css/2.7ac9ec5e.chunk.css"
   },
   {
-    "revision": "be2e9cc9ce0cccd55695",
+    "revision": "23178c0674c0e4108205",
     "url": "/smartParkingWeb/static/css/main.df272714.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/smartParkingWeb/static/js/2.6d3d0ebb.chunk.js"
   },
   {
-    "revision": "be2e9cc9ce0cccd55695",
-    "url": "/smartParkingWeb/static/js/main.1aa62ff2.chunk.js"
+    "revision": "23178c0674c0e4108205",
+    "url": "/smartParkingWeb/static/js/main.dbe80e28.chunk.js"
   },
   {
     "revision": "8e5ae062349a02443377",
