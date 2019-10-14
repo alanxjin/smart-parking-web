@@ -4,7 +4,7 @@ import mapImage from "../map.png"
 
 export default class MyMeter extends Component{
     state={
-        slotSelected: {"id": "slot2", "location": {"lat": -35.648, "lng": 150.374}},
+        slotSelected: {"id": "slot3", "location": {"lat": -35.648, "lng": 150.374}},
         time: 0
     }
 
