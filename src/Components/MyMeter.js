@@ -19,7 +19,7 @@ export default class MyMeter extends Component{
 
     calculateFee = (seconds) => {
         const rate = 0.02;
-        return rate * seconds
+        return (rate * seconds).toFixed(2)
     }
    
 
