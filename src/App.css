@@ -20,3 +20,19 @@
 .App-link {
   color: #09d3ac;
 }
+
+#home #my-location{
+    margin-bottom: 1em;;
+}
+
+#home #slot-info{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#home #slot-info #slots{
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
