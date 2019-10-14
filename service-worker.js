@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/smartParkingWeb/precache-manifest.f71855b05fb9633cfe21b1408ba735a4.js"
+  "/smartParkingWeb/precache-manifest.5646f05e7dd72d61e073cb2ad9cf1e51.js"
 );
 
 self.addEventListener('message', (event) => {
