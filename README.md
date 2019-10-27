@@ -2,4 +2,4 @@
 1. `npm install`
 2. `npm start`
 
-https://alanxjin.github.io/smartParkingWeb
+https://pricejiang.github.io/smartParkingWeb/
