@@ -8,9 +8,14 @@
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-firestore": "^1.0.1",
+    "react-geocode": "^0.2.0",
+    "react-geolocated": "^3.0.1",
+    "react-google-location": "^1.2.2",
     "react-scripts": "3.2.0",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.1"
+    "semantic-ui-react": "^0.88.1",
+    "use-position": "0.0.6"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,21 +1,24 @@
 import React , { Component } from 'react';
-
 import { Segment, Card, Icon,Label,Image} from 'semantic-ui-react';
-import mapImage from "../map.png"
+import { usePosition } from 'use-position';
+import mapImage from "../map.png";
+import { db } from "./firebase-init"
 
 export default class Home extends Component{
     state = {
-        slots: [
-            {"id": "slot1", "location": {"lat": -34.397, "lng": 150.644}, "availability": 0},
-            {"id": "slot2", "location": {"lat": -35.648, "lng": 150.374}, "availability": 1},
-            {"id": "slot3", "location": {"lat": -36.239, "lng": 150.839}, "availability": 0},
-            {"id": "slot4", "location": {"lat": -37.397, "lng": 150.239}, "availability": 1}
-        ],
-        slotSelectedId:"slot1"
+        slots: [],
+        slotSelectedId: 'slot1'
+    }
+    componentDidMount(){
+        db.collection('slots').get().then(snapshot => {
+            const data = snapshot.docs.map(doc => doc.data());
+            this.setState({slots: data});
+        });
     }
     selectSlotbyId = (slotId) => {
         this.setState({slotSelectedId:slotId});
     }
+    
     render() {
         const {slots, slotSelectedId} = this.state;
         const slotSelected = slots.filter((slot)=> slot["id"] === slotSelectedId)[0];
@@ -27,14 +30,14 @@ export default class Home extends Component{
             <Segment attached id="home">
                 <div id="my-location">
                     <Icon name='location arrow' />
-                    <Label>lat: -34.397</Label> <Label>lng: 150.644</Label>
+                    <Position></Position>
                 </div>
                 <div id="slot-info">
                     <div id="slots"> 
                         {slotElements}
                     </div>
                     <div id="slot-detail">
-                        <Card color={slotSelected["availability"] === 1? "green": "red"}>
+                        {slots && slotSelected && <Card color={slotSelected["availability"] === 1? "green": "red"}>
                             <Image src={mapImage}></Image>
                             <Card.Content>
                                 <Card.Header><Icon name='product hunt'/>{slotSelected["id"]}</Card.Header>
@@ -46,6 +49,7 @@ export default class Home extends Component{
                                 </Card.Description>
                             </Card.Content>
                         </Card>
+                        }
                     </div>
                 </div>
             </Segment>
@@ -54,6 +58,15 @@ export default class Home extends Component{
   
 }
 
+
+const Position = () => {
+    const { latitude, longitude} = usePosition();
+    return (
+        <>
+            <Label>{latitude}</Label> <Label>{longitude}</Label>  
+        </>
+    );
+}
 
 const SlotCard = (props) => {
     
