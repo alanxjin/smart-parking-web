@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alanxjin.github.io/smartParkingWeb",
+  "homepage": "https://pricejiang.github.io/smartParkingWeb",
   "dependencies": {
     "firebase": "^7.2.2",
     "gh-pages": "^2.1.1",
