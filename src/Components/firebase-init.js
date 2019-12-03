@@ -1,6 +1,4 @@
-import app from 'firebase/app';
 import fb from 'firebase';
-
 
 
 const firebaseConfig = {
@@ -14,6 +12,6 @@ const firebaseConfig = {
     measurementId: "G-9Y20CKPN4K"
 };
 
-app.initializeApp(firebaseConfig);
+fb.initializeApp(firebaseConfig);
 var db = fb.firestore();
-export { db };
+export { fb,db };
