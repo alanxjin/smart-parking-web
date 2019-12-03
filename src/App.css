@@ -21,6 +21,11 @@
   color: #09d3ac;
 }
 
+#nav{
+    margin:0;
+    border-radius: 0;
+}
+
 #home #my-location{
     margin-bottom: 1em;;
 }
