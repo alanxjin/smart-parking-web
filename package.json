@@ -2,22 +2,29 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alanxjin.github.io/smartParkingWeb",
+  "homepage": "https://pricejiang.github.io/smartParkingWeb",
   "dependencies": {
+    "firebase": "^7.2.2",
+    "firebaseui": "^4.3.0",
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-firestore": "^1.0.1",
+    "react-geocode": "^0.2.0",
+    "react-geolocated": "^3.0.1",
+    "react-google-location": "^1.2.2",
     "react-scripts": "3.2.0",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.1"
+    "semantic-ui-react": "^0.88.1",
+    "use-position": "0.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-	"predeploy": "npm run build",
-   	"deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
